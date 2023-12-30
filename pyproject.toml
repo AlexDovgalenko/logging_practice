@@ -1,0 +1,18 @@
+# black formatter options
+# https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#what-on-earth-is-a-pyproject-toml-file
+[tool.black]
+verbose = true
+line-length = 120
+experimental-string-processing = true
+force-exclude = '^/scripts/'
+
+# Format docstring documentation according to PEP 257
+# https://docformatter.readthedocs.io/en/latest/index.html
+# The configuration file can be passed with a full path. For example:
+# docformatter --config ~/.secret/path/to/pyproject.toml
+# If no configuration file is explicitly passed, docformatter will search the current directory
+# for the supported files and use the first one found.
+
+[tool.docformatter]
+wrap-summaries = 0
+wrap-descriptions = 120
